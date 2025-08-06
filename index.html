@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto - Oliver Felix Perez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="developer-info">
+                <div class="avatar">
+                    <img src="./images/profile.webp" alt="Oliver Felix Perez" class="profile-image">
+                </div>
+                <div class="dev-details">
+                    <h1 class="dev-name">Oliver Felix Perez</h1>
+                    <p class="dev-title">Apasionado por la Tecnología</p>
+                </div>
+            </div>
+            
+            <div class="header-controls">
+                <!-- Redes Sociales -->
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/oliver-felix-perez" target="_blank" class="social-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Oliver-Fj" target="_blank" class="social-link github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/Oliver_Atoms" target="_blank" class="social-link telegram" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://wa.me/51997704395" target="_blank" class="social-link whatsapp" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <!-- Toggle Modo Día/Noche -->
+                <button class="theme-toggle" id="themeToggle" title="Cambiar tema">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="container">
+            <div class="app-header">
+                <h2 class="title">🎁 Amigo Secreto</h2>
+                <p class="subtitle">Agrega a tus amigos y descubre quién será tu amigo secreto</p>
+            </div>
+            
+            <div class="input-section">
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="text" id="nameInput" placeholder="Escribe el nombre de tu amigo..." maxlength="50">
+                        <span class="input-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </span>
+                    </div>
+                    <button class="btn btn-add" id="addButton">
+                        <i class="fas fa-plus"></i>
+                        Adicionar
+                    </button>
+                </div>
+                <div class="alert" id="alertMessage"></div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="friendCount">0</div>
+                        <div class="stat-label">Amigos</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="sorteoCount">0</div>
+                        <div class="stat-label">Sorteos</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends-list">
+                <div class="list-header">
+                    <h3>📝 Lista de Amigos</h3>
+                    <button class="btn-clear" id="clearAllButton" title="Limpiar lista">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+                <div id="friendsList">
+                    <div class="empty-state">
+                        <i class="fas fa-user-friends empty-icon"></i>
+                        <p>Aún no has agregado ningún amigo.</p>
+                        <p class="empty-subtitle">¡Comienza escribiendo un nombre arriba!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-sort" id="sortButton" disabled>
+                <i class="fas fa-dice-six"></i>
+                Sortear Amigo
+            </button>
+
+            <div class="result-section" id="resultSection">
+                <div class="result-content">
+                    <div class="result-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="result-title">🎉 ¡Tu Amigo Secreto es:</div>
+                    <div class="result-name" id="resultName"></div>
+                    <button class="btn-new-draw" id="newDrawButton">
+                        <i class="fas fa-redo"></i>
+                        Nuevo Sorteo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Oliver Felix Perez. Hecho con ❤️ para Alura Latam en colaboración con Oracle Next Education</p>
+            <div class="footer-links">
+                <span class="footer-tech">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
