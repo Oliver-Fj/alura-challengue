@@ -300,7 +300,7 @@ A todas las librerías, frameworks y recursos utilizados que hacen posible el de
 - [MDN Web Docs](https://developer.mozilla.org/) por la documentación
 
 ### 🎮 **Demo en Vivo**
-Prueba la aplicación aquí: **[Amigo Secreto - Demo](https://oliver-felix-perez.github.io/amigo-secreto-one/)**
+Prueba la aplicación aquí: **[Amigo Secreto - Demo](https://oliver-fj.github.io/alura-challengue/)**
 
 ---
 
